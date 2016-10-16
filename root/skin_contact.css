@@ -1,0 +1,34 @@
+h1 {
+	font-family: "Arial Black", "Gadget", sans-serif;
+	color: #000000;
+	font-size: 35px;
+	text-align: center;
+	line-height: 0.25
+}
+
+#topImg {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#topImg img {
+	width: 100%;
+}
+
+#content p {
+	font-family: "Tahoma", "Geneva", sans-serif;
+	font-style: italic;
+	text-align: center;
+}
+
+#bottomLogo {
+	width: 200px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#bottomLogo img {
+	width: 100%;
+}
