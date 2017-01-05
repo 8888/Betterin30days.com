@@ -1,3 +1,7 @@
+<?php
+	include 'include/page_elements.php';
+	include 'include/database.php';
+?>
 <!doctype HTML>
 <html>
 	<head>
@@ -10,55 +14,27 @@
 	<body>
 		<div id="main">
 			<?php
-				include 'include/header.php';
-				include 'include/sidebar.php';
+				insert_header();
+				insert_sidebar();
 			?>
 			<div id="content">
-				<div class="entry">
-					<a href="clothing.php"><h1>DRIFT STRANGELY</h1></a>
-					<p>These start as vintage Levi's Denim Trucker Jackets. They are hand distressed, dyed, cut, and painted. They are available for purchase in diffent colors, styles, and designs, or as a custom order.</p>
-					<img class="wideimage" src="img/clothing/jackets/DSvests.jpg">
-				</div>
-				<div class="entry">
-					<a href="artwork.php"><h1>ONWARD, ALWAYS!</h1></a>
-					<p>Moon-inspired art, a handmade T-shirt, and a custom denim vest. I've finished a new set of artwork and began working on more adventures.</p>
-					<img class="wideimage" src="img/lee/instudio.jpg">
-				</div>
-				<div class="entry">
-					<a href="artworkset2.php"><h1>SPRAY ART ON CANVAS</h1></a>
-					<p>I've completed many new projects, while improving on some painting techniques. These new paintings are crisper, cleaner, and more detailed. Like my other works, they usually have a story or meaning behind them, but I'm always intrigued on other people's interpretations.</p>
-					<img class="wideimage" src="img/artwork/set2/bomber_edit.jpg">
-				</div>
-				<div class="entry">
-					<h1>ADDITIONS TO THE COLLECTION</h1>
-					<p>The majority of my recent efforts have been directed towards creating new canvas paintings, though there has been preperation for some much larger projects.</p>
-					<img src="img/artwork/set1/stack.jpg">
-				</div>
-				<div class="entry">
-					<h1>ALTERNATIVE MEDIUMS</h1>
-					<p>This project seemed to fit better on one of my most used surf boards, instead of a traditional canvas. I'm not big on display only or sentimental value, so I'll let the ocean erode this away. Let's see how long it lasts.</p>
-					<img src="img/artwork/set1/demons6.jpg">
-				</div>
-				<div class="entry">
-					<h1>A BETTER T-SHIRT</h1>
-					<p>The standard issue T, but better: hand drawn, cut, and sewn. Slim with some extra length for a perfect fit.</p>
-					<img class="wideimage" src="img/lee/brick_wall2.jpeg">
-				</div>
-				<div class="entry">
-					<h1>ACRYLIC ON CANVAS</h1>
-					<p>A new series of paintings of orignal phrases using acrylic on canvas has begun.</p>
-					<img src="img/artwork/set1/never_mind.jpg">
-				</div>
-				<div class="entry">
-					<h1>12 HAND-MADE T-SHIRTS</h1>
-					<p>These original 12 T-shirts were designed, cut and sewn by hand and numbered in order of creation. All are of varying designs featuring different fits, lengths, necklines, sleeves and styles. Material is a cotton-polyester blend.</p>
-					<img src="img/clothing/shirts1.jpg">
-				</div>
-				<div class="entry">
-					<h1>LUNAR NEW YEAR</h1>
-					<p>Lunar New Year was probably first conceived in a seedy Chinese restaurant somewhere years ago. It's a concept EP in an attempt to convince myself of a few ideas that no longer have any place in my head.</p>
-					<img src="img/music/lunar_new_year.jpg">
-				</div>
+				<?php
+					$blog_data = mysqli_query($db, "SELECT * FROM pto_tracker.blog ORDER BY id DESC;")
+            			or die("Query failed");
+					while ($row = mysqli_fetch_array($blog_data)) {
+						$title = $row['title'];
+						$text = $row['text'];
+						$img = $row['image'];
+
+						echo
+						'<div class="entry">
+							<h1>'.$title.'</h1></a>
+							<p>'.$text.'</p>
+							<img class="wideimage" src="'.$img.'">
+						</div>';
+					}
+					mysqli_close($db);
+				?>
 			</div>
 		</div>
 	</body>

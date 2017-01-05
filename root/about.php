@@ -1,3 +1,6 @@
+<?php
+	include 'include/page_elements.php';
+?>
 <!doctype HTML>
 <html>
 	<head>
@@ -10,8 +13,8 @@
 	<body>
 		<div id="main">
 			<?php
-				include 'include/header.php';
-				include 'include/sidebar.php';
+				insert_header();
+				insert_sidebar();
 			?>
 			<div id="content">
 				<h1>ABOUT</h1>
