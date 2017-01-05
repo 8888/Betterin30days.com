@@ -17,6 +17,16 @@ a {
 	margin-left: auto;
 }
 
+#content {
+	display: inline-block;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	float: right;
+}
+
+/* Header styling */
 #header {
 	width: 1000px;
 }
@@ -25,20 +35,12 @@ a {
 	width: 100%;
 }
 
+/* Side Bar styling */
 #sideBar {
 	display: inline-block;
 	width: 150px;
 	position: relative;
 	float: left;
-}
-
-#content {
-	display: inline-block;
-	width: 800px;
-	margin-right: auto;
-	margin-left: auto;
-	position: relative;
-	float: right;
 }
 
 #artLinks a {

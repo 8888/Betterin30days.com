@@ -9,38 +9,23 @@
 	</head>
 	<body>
 		<div id="main">
-			<div id="header"><img src="img/logos/header_logo.jpg"></div>
-			<div id="sideBar">
-				<div id="artLinks">
-					<a href="artwork.html">ARTWORK</a><br>
-					<a href="clothing.html">CLOTHING</a><br>
-					<a href="music.html">MUSIC</a><br>
-					<a href="creations.html">CREATIONS</a><br>
-				</div>
-				<div id="otherLinks">
-					<a href="about.html">ABOUT</a><br>
-					<a href="contact.html">CONTACT</a><br>
-					<a href="index.html">HOME</a><br>
-				</div>
-				<div id="socialLinks">
-					<img src="img/logos/instagram.png"><a href="https://instagram.com/betterin30days/">INSTAGRAM</a><br>
-					<img src="img/logos/soundcloud.png"><a href="https://soundcloud.com/rant-music">SOUNDCLOUD</a><br>
-					<img src="img/logos/snapchat.png"><p>BETTERIN30DAYS</p><br>
-				</div>
-			</div>
+			<?php
+				include 'include/header.php';
+				include 'include/sidebar.php';
+			?>
 			<div id="content">
 				<div class="entry">
-					<a href="clothing.html"><h1>DRIFT STRANGELY</h1></a>
+					<a href="clothing.php"><h1>DRIFT STRANGELY</h1></a>
 					<p>These start as vintage Levi's Denim Trucker Jackets. They are hand distressed, dyed, cut, and painted. They are available for purchase in diffent colors, styles, and designs, or as a custom order.</p>
 					<img class="wideimage" src="img/clothing/jackets/DSvests.jpg">
 				</div>
 				<div class="entry">
-					<a href="artwork.html"><h1>ONWARD, ALWAYS!</h1></a>
+					<a href="artwork.php"><h1>ONWARD, ALWAYS!</h1></a>
 					<p>Moon-inspired art, a handmade T-shirt, and a custom denim vest. I've finished a new set of artwork and began working on more adventures.</p>
 					<img class="wideimage" src="img/lee/instudio.jpg">
 				</div>
 				<div class="entry">
-					<a href="artworkset2.html"><h1>SPRAY ART ON CANVAS</h1></a>
+					<a href="artworkset2.php"><h1>SPRAY ART ON CANVAS</h1></a>
 					<p>I've completed many new projects, while improving on some painting techniques. These new paintings are crisper, cleaner, and more detailed. Like my other works, they usually have a story or meaning behind them, but I'm always intrigued on other people's interpretations.</p>
 					<img class="wideimage" src="img/artwork/set2/bomber_edit.jpg">
 				</div>

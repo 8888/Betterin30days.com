@@ -9,25 +9,10 @@
 	</head>
 	<body>
 		<div id="main">
-			<div id="header"><img src="img/logos/header_logo.jpg"></div>
-			<div id="sideBar">
-				<div id="artLinks">
-					<a href="artwork.html">ARTWORK</a><br>
-					<a href="clothing.html">CLOTHING</a><br>
-					<a href="music.html">MUSIC</a><br>
-					<a href="creations.html">CREATIONS</a><br>
-				</div>
-				<div id="otherLinks">
-					<a href="about.html">ABOUT</a><br>
-					<a href="contact.html">CONTACT</a><br>
-					<a href="index.html">HOME</a><br>
-				</div>
-				<div id="socialLinks">
-					<img src="img/logos/instagram.png"><a href="https://instagram.com/betterin30days/">INSTAGRAM</a><br>
-					<img src="img/logos/soundcloud.png"><a href="https://soundcloud.com/rant-music">SOUNDCLOUD</a><br>
-					<img src="img/logos/snapchat.png"><p>BETTERIN30DAYS</p><br>
-				</div>
-			</div>
+			<?php
+				include 'include/header.php';
+				include 'include/sidebar.php';
+			?>
 			<div id="content">
 				<h1>ABOUT</h1>
 				<div id="topImg"><img src="img/lee/brick_wall.jpg"></div>
