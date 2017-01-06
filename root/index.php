@@ -21,6 +21,7 @@
 				<?php
 					$blog_data = mysqli_query($db, "SELECT * FROM pto_tracker.blog ORDER BY id DESC;")
             			or die("Query failed");
+					
 					while ($row = mysqli_fetch_array($blog_data)) {
 						$title = $row['title'];
 						$text = $row['text'];
@@ -28,7 +29,7 @@
 
 						echo
 						'<div class="entry">
-							<h1>'.$title.'</h1></a>
+							<h1>'.$title.'</h1>
 							<p>'.$text.'</p>
 							<img class="wideimage" src="'.$img.'">
 						</div>';
