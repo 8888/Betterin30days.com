@@ -23,6 +23,7 @@ function insert_sidebar () {
         </div>
         <div id="socialLinks">
             <img src="img/logos/instagram.png"><a href="https://instagram.com/betterin30days/">INSTAGRAM</a><br>
+            <img src="img/logos/github.png"><a href="https://github.com/betterin30days">GITHUB</a><br>
             <img src="img/logos/soundcloud.png"><a href="https://soundcloud.com/rant-music">SOUNDCLOUD</a><br>
         </div>
     </div>';

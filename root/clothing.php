@@ -22,7 +22,7 @@
 					<img src="img/clothing/jackets/DSVestBack_edit.jpg">
 				</div>
 				<div class="threecolumns"> <!--Middle Column-->
-					<img src="img/clothing/jackets/DSLee.jpg">
+					<img src="img/clothing/jackets/DSvest_close.JPG">
 				</div>
 				<div class="threecolumns"> <!--Right Column-->
 					<img src="img/clothing/jackets/DSVestFront_edit.jpg">

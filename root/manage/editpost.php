@@ -31,6 +31,7 @@
                     <h1>'.$title.'</h1>
                     <p>'.$text.'</p>
                     <img class="wideimage" src="../'.$img.'">
+                    <p>'.$img.'</p>
                 </div>';
 
                 mysqli_close($db);
