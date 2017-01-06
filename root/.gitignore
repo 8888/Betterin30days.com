@@ -1,2 +1,6 @@
 #Database info
 PTOtracker_alias
+database.php
+
+#Mac file explorer layout
+.DS-Store
