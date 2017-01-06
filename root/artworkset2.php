@@ -1,36 +1,21 @@
+<?php
+	include 'include/page_elements.php';
+?>
 <!doctype HTML>
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css">
-		<link type="text/css" rel="stylesheet" href="skin_artwork.css">
+		<link type="text/css" rel="stylesheet" href="style/stylesheet.css">
+		<link type="text/css" rel="stylesheet" href="style/skin_artwork.css">
 		<title>Better in 30 Days | Artwork</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="script.js"></script>
 	</head>
 	<body>
 		<div id="main">
-			<div id="header"><img src="img/logos/header_logo.jpg"></div>
-			<div id="sideBar">
-				<div id="artLinks">
-					<a href="artwork.html">ARTWORK</a><br>
-					<a class="subset" href="artwork.html">SET 3</a><br>
-					<a class="subset" href="artworkset2.html">SET 2</a><br>
-					<a class="subset" href="artworkset1.html">SET 1</a><br>
-					<a href="clothing.html">CLOTHING</a><br>
-					<a href="music.html">MUSIC</a><br>
-					<a href="creations.html">CREATIONS</a><br>
-				</div>
-				<div id="otherLinks">
-					<a href="about.html">ABOUT</a><br>
-					<a href="contact.html">CONTACT</a><br>
-					<a href="index.html">HOME</a><br>
-				</div>
-				<div id="socialLinks">
-					<img src="img/logos/instagram.png"><a href="https://instagram.com/betterin30days/">INSTAGRAM</a><br>
-					<img src="img/logos/soundcloud.png"><a href="https://soundcloud.com/rant-music">SOUNDCLOUD</a><br>
-					<img src="img/logos/snapchat.png"><p>BETTERIN30DAYS</p><br>
-				</div>
-			</div>
+			<?php
+				insert_header();
+				insert_sidebar();
+			?>
 			<div id="content">
 				<h1>ARTWORK</h1>
 				<p>For all purchases and inquiries, please contact me at lee@betterin30days.com</p>

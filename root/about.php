@@ -1,33 +1,21 @@
+<?php
+	include 'include/page_elements.php';
+?>
 <!doctype HTML>
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css">
-		<link type="text/css" rel="stylesheet" href="skin_about.css">
+		<link type="text/css" rel="stylesheet" href="style/stylesheet.css">
+		<link type="text/css" rel="stylesheet" href="style/skin_about.css">
 		<title>Better in 30 Days | About</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="script.js"></script>
 	</head>
 	<body>
 		<div id="main">
-			<div id="header"><img src="img/logos/header_logo.jpg"></div>
-			<div id="sideBar">
-				<div id="artLinks">
-					<a href="artwork.html">ARTWORK</a><br>
-					<a href="clothing.html">CLOTHING</a><br>
-					<a href="music.html">MUSIC</a><br>
-					<a href="creations.html">CREATIONS</a><br>
-				</div>
-				<div id="otherLinks">
-					<a href="about.html">ABOUT</a><br>
-					<a href="contact.html">CONTACT</a><br>
-					<a href="index.html">HOME</a><br>
-				</div>
-				<div id="socialLinks">
-					<img src="img/logos/instagram.png"><a href="https://instagram.com/betterin30days/">INSTAGRAM</a><br>
-					<img src="img/logos/soundcloud.png"><a href="https://soundcloud.com/rant-music">SOUNDCLOUD</a><br>
-					<img src="img/logos/snapchat.png"><p>BETTERIN30DAYS</p><br>
-				</div>
-			</div>
+			<?php
+				insert_header();
+				insert_sidebar();
+			?>
 			<div id="content">
 				<h1>ABOUT</h1>
 				<div id="topImg"><img src="img/lee/brick_wall.jpg"></div>
