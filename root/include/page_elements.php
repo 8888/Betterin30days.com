@@ -1,7 +1,7 @@
 <?php
 function insert_header () {
     echo
-    '<div id="header"><img src="img/logos/header_logo.jpg"></div>';
+    '<div id="header"><img src="../img/logos/header_logo.jpg"></div>';
 }
 
 function insert_sidebar () {

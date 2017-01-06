@@ -4,8 +4,8 @@
 <!doctype HTML>
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css">
-		<link type="text/css" rel="stylesheet" href="skin_artwork.css"> <!--Same stylesheet as artwork.html-->
+		<link type="text/css" rel="stylesheet" href="style/stylesheet.css">
+		<link type="text/css" rel="stylesheet" href="style/skin_artwork.css"> <!--Same stylesheet as artwork.html-->
 		<title>Better in 30 Days | Creations</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="script.js"></script>

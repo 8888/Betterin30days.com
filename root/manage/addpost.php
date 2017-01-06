@@ -1,12 +1,12 @@
 <?php
-    include 'include/page_elements.php';
-	include 'include/database.php';
-    include 'include/session.php';
+    include '../include/page_elements.php';
+	include '../include/database.php';
+    include '../include/session.php';
 ?>
 <!doctype HTML>
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css">
+		<link type="text/css" rel="stylesheet" href="../style/stylesheet.css">
 		<title>Better in 30 Days</title>
 	</head>
     <body>
