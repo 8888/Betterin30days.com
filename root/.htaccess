@@ -1,1 +1,4 @@
 Options -Indexes
+SSLOptions +StrictRequire
+SSLRequireSSL
+ErrorDocument 403 https://www.betterin30days.com
